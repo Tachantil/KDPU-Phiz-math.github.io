@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phys. Math</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-div">
+            <img class="header-logo" src="photo/ava.png" alt="Phys. Math" />
+            <div class="header-logo-text">
+                Криворізький державний педагогічний університет
+            </div>
+        </div>
+        <div class="header-container">
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li class="header-menu-item"><a href="#abiturient">Вступнику</a></li>
+                    <li class="header-menu-item"><a href="#advantages">Переваги</a></li>
+                    <li class="header-menu-item"><a href="#about">Про нас</a></li>
+                    <li class="header-menu-item"><a href="#contacts">Контакти</a></li>
+                    <li class="header-menu-item"><a onclick="openModal()" href="#test">Анкета</a></li>
+                </ul>
+            </nav>
+            <a class="phone" href="tel:+380972564229">(067) 592 23 44</a>
+        </div>
+    </header>
+
+<div id="modalwindow">
+    <div class="modal-body">
+        <div id="quiz-modal" class="modal">
+            <div class="modal-content">
+                <button id="exit-button" onclick="closeModal()">&#10008;</button>
+                <h2 id="quiz-title">Освітня програма очима випускника</h2>
+                <div id="test-text-intro">Анкета для опитування випускників щодо якості освітньої програми. Анкетування проводиться анонімно. Ваші відповіді
+                допоможуть удосконалити якість освітнього процесу в Криворізькому державному педагогічному університеті.</div>
+                <button id="quiz-button">Почати!</button>
+                <form id="quiz-form">
+                    <div id="quiz-questions"></div>
+                    <button id="submit-button">Відправити</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./script(test).js"></script>
+
+    <main>
+        <!-- Спеціальності -->
+        <div class="specialties-div">
+            <div class="text-intro-div">
+                <div class="photo-purple-tabls"></div>
+                <div style="display: flex; flex-direction: column; text-align: center;">
+                    <h1 class="text-intro">Фізмат - це не просто факультет, це стиль життя!</h1>
+                    <img style="width: 60%; align-self: center;" src="photo-site/gokdpu.png" alt="#GOKDPU">
+                </div>
+            </div>
+
+            <div class="container-specialties" id="abiturient">
+                <a href="#works-slider-1" class="specialties" id="specialties-1">
+                    <p class="specialties-name">014.04 Середня освіта (Математика)</p>
+                    <div class="nmt-text-div">
+                        <h1 class="nmt-title">НМТ</h1>
+                        <ul class="nmt-list">
+                            <li class="nmt-list-items">Українська мова і література</li>
+                            <li class="nmt-list-items">Математика</li>
+                            <li class="nmt-list-items">Історія україни</li>
+                            <li class="nmt-list-items">Предмет на вибір</li>
+                            <li id="nmt-mot-list-items">Мотивоційний лист</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#works-slider-2" class="specialties" id="specialties-2">
+                    <p class="specialties-name">014.08 Середня освіта (Фізика та астрономія)</p>
+                    <div class="nmt-text-div">
+                        <h1 class="nmt-title">НМТ</h1>
+                        <ul class="nmt-list">
+                            <li class="nmt-list-items">Українська мова і література</li>
+                            <li class="nmt-list-items">Математика</li>
+                            <li class="nmt-list-items">Історія україни</li>
+                            <li class="nmt-list-items">Предмет на вибір</li>
+                            <li id="nmt-mot-list-items">Мотивоційний лист</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#works-slider-3" class="specialties" id="specialties-3">
+                    <p class="specialties-name">014.09 Середня освіта (Інформатика)</p>
+                    <div class="nmt-text-div">
+                        <h1 class="nmt-title">НМТ</h1>
+                        <ul class="nmt-list">
+                            <li class="nmt-list-items">Українська мова і література</li>
+                            <li class="nmt-list-items">Математика</li>
+                            <li class="nmt-list-items">Історія україни</li>
+                            <li class="nmt-list-items">Предмет на вибір</li>
+                            <li id="nmt-mot-list-items">Мотивоційний лист</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Інформація - спеціальностей -->
+        <div class="container-info-specialties">
+            <h1 class="info-specialties-title">Твоє майбутнє</h1>
+            <section class="slider-wrapper">
+                <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+                <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+                <ul class="slides-container" id="slides-container">
+                    <li class="slides" id="works-slider-1">
+                        <div>
+                            <h1 class="title-info-specialties">Середня освіта (Математика)</h1>
+                            <div>
+                                <h1 class="intro-specialties-text">Майбутні професії:</h1>
+                                <ul class="info-specialties-list">
+                                    <li class="info-specialties-item">вчитель математики та інформатики</li>
+                                    <li class="info-specialties-item">математик</li>
+                                    <li class="info-specialties-item">викладач математики</li>
+                                    <li class="info-specialties-item">професіонал-статистик</li>
+                                    <li class="info-specialties-item">науковий співробітник</li>
+                                    <li class="info-specialties-item">фахівець з інформаційних технологій</li>
+                                    <li class="info-specialties-item">професіонал в галузі навчання</li>
+                                    <li class="info-specialties-item">педагогічний працівник позашкільної освіти</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slides" id="works-slider-2">
+                        <div>
+                            <h1 class="title-info-specialties">Середня освіта (Фізика та астрономія)</h1>
+                            <div>
+                                <h1 class="intro-specialties-text">Майбутні професії:</h1>
+                                <ul class="info-specialties-list">
+                                    <li class="info-specialties-item">вчитель фізики, астрономії та
+                                        інформатики/математики</li>
+                                    <li class="info-specialties-item">викладач фізики</li>
+                                    <li class="info-specialties-item">науковий співробітник (фізика, астрономія,
+                                        обчислювальні системи)</li>
+                                    <li class="info-specialties-item">фахівець з інформаційних технологій</li>
+                                    <li class="info-specialties-item">технік-програміст</li>
+                                    <li class="info-specialties-item">технік-лаборант</li>
+                                    <li class="info-specialties-item">лаборант з фізико-хімічних випробувань</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slides" id="works-slider-3">
+                        <div>
+                            <h1 class="title-info-specialties">Середня освіта (Інформатика)</h1>
+                            <div>
+                                <h1 class="intro-specialties-text">Майбутні професії:</h1>
+                                <ul class="info-specialties-list">
+                                    <li class="info-specialties-item">учитель інформатики, англійської мови та
+                                        літератури, математики</li>
+                                    <li class="info-specialties-item">викладач інформатики</li>
+                                    <li class="info-specialties-item">фахівець з інформаційних технологій</li>
+                                    <li class="info-specialties-item">інженер-програміст</li>
+                                    <li class="info-specialties-item">розробник програмного забезпечення</li>
+                                    <li class="info-specialties-item">розробник та адміністратор баз даних</li>
+                                    <li class="info-specialties-item">системний адміністратор</li>
+                                    <li class="info-specialties-item">веб-програміст, адміністратор сайту</li>
+                                    <li class="info-specialties-item">адміністратор комп’ютерної мережі</li>
+                                    <li class="info-specialties-item">керівник інформаційної служби</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <script src="script(info-specialties).js"></script>
+        </div>
+
+        <!-- Інформація - спеціальностей -->
+
+        <!-- Спеціальності -->
+
+        <!-- Переваги -->
+        <div id="advantages" class="advantages-container">
+            <h1 class="advantages-title">Наші Переваги</h1>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/1.png" alt="№" />
+                        <p id="text-title-slider-item">ЯКІСНА ОСВІТА В РІДНОМУ МІСТІ</p>
+                        <p class="text-slider-item">КДПУ — провідний вищий навчальний заклад міста Кривого Рогу та
+                            всього Придніпровського регіону.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/2.png" alt="№" />
+                        <p id="text-title-slider-item">ПОЄДНАННЯ СПЕЦІАЛЬНОСТЕЙ</p>
+                        <p class="text-slider-item">Ви можете поєднувати спеціальності, що значно розширює можливості
+                            працевлаштування.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/3.png" alt="№" />
+                        <p id="text-title-slider-item">КВАЛІФІКОВАНИЙ ВИКЛАДАЦЬКИЙ СКЛАД</p>
+                        <p class="text-slider-item">Понад 300 викладачів високої кваліфікації, майже 70% яких мають
+                            наукові ступені та вчені звання, зокрема докторів наук та професорів – 39.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/4.png" alt="№" />
+                        <p id="text-title-slider-item">ВИСОКА АКАДЕМІЧНА СТИПЕНДІЯ</p>
+                        <p class="text-slider-item">Розмір звичайної академічної стипендії – 2000 грн. Відмінники
+                            отримують стипендію у розмірі 2910 грн.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/5.png" alt="№" />
+                        <p id="text-title-slider-item">ЗАБЕЗПЕЧЕНІСТЬ ГУРТОЖИТКОМ</p>
+                        <p class="text-slider-item">За потреби студенти університету стовідсотково забезпечуються житлом
+                            у гуртожитку, де створені всі необхідні умови для проживання, навчання та відпочинку.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/6.png" alt="№" />
+                        <p id="text-title-slider-item">ПОВНИЙ ЦИКЛ НАВЧАННЯ ВІД БАКАЛАВРА ДО ДОКТОРА</p>
+                        <p class="text-slider-item">Усі рівні вищої освіти: випускники-бакалаври мають змогу вступити до
+                            магістратури, найкращі можуть продовжити навчання в аспірантурі для здобуття ступеня доктора
+                            філософії.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/7.png" alt="№" />
+                        <p id="text-title-slider-item">ЦІКАВЕ СТУДЕНТСЬКЕ ЖИТТЯ: ОСВІТА, НАУКА, ДОЗВІЛЛЯ</p>
+                        <p class="text-slider-item">Олімпіади, наукові конкурси, конференції, експерименти, спортивні
+                            змагання. Студентський клуб, студентське самоврядування, клуб молодіжного лідерства, творчі
+                            конкурси, туристичні подорожі.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/8.png" alt="№" />
+                        <p id="text-title-slider-item">ТРАДИЦІЇ ТА ІННОВАЦІЇ</p>
+                        <p class="text-slider-item">Спеціалізовані лабораторії, майстерні, хімічні, біологічні, фізичні
+                            кабінети, танцювальні та спортивні зали. Дистанційне та комбіноване навчання, сучасні
+                            методики викладання.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/9.png" alt="№" />
+                        <p id="text-title-slider-item">ПРАКТИЧНА ПІДГОТОВКА</p>
+                        <p class="text-slider-item">Пленери для студентів мистецьких спеціальностей, польові й
+                            туристичні практики для студентів природничого спрямування, психолого-педагогічні,
+                            обчислювальні, технологічні практики.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/10.png" alt="№" />
+                        <p id="text-title-slider-item">МІЖНАРОДНИЙ ДОСВІД</p>
+                        <p class="text-slider-item">Університет постійно розширює участь студентів у міжнародних
+                            освітніх і культурних програмах, закордонних мистецьких заходах, громадських ініціативах.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/11.png" alt="№" />
+                        <p id="text-title-slider-item">УНІВЕРСАЛЬНІСТЬ ОТРИМАНОЇ ОСВІТИ</p>
+                        <p class="text-slider-item">Педагогічна освіта – це фундаментальні знання в обраній науковій
+                            галузі, розвинені лідерські та комунікативні навички, уміння навчати і вчитися протягом
+                            життя.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/12.png" alt="№" />
+                        <p id="text-title-slider-item">ШИРОКІ МОЖЛИВОСТІ ПРАЦЕВЛАШТУВАННЯ</p>
+                        <p class="text-slider-item">Випускники педагогічного залучені до всіх сфер діяльності:
+                            освітньої, адміністративної, мистецької, краєзнавчої, екологічної, соціальної,
+                            психологічної, технологічної, видавничої, спортивної.</p>
+                    </div>
+
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/1.png" alt="№" />
+                        <p id="text-title-slider-item">ЯКІСНА ОСВІТА В РІДНОМУ МІСТІ</p>
+                        <p class="text-slider-item">КДПУ — провідний вищий навчальний заклад міста Кривого Рогу та
+                            всього Придніпровського
+                            регіону.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/2.png" alt="№" />
+                        <p id="text-title-slider-item">ПОЄДНАННЯ СПЕЦІАЛЬНОСТЕЙ</p>
+                        <p class="text-slider-item">Ви можете поєднувати спеціальності, що значно розширює можливості
+                            працевлаштування.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/3.png" alt="№" />
+                        <p id="text-title-slider-item">КВАЛІФІКОВАНИЙ ВИКЛАДАЦЬКИЙ СКЛАД</p>
+                        <p class="text-slider-item">Понад 300 викладачів високої кваліфікації, майже 70% яких мають
+                            наукові ступені та вчені
+                            звання, зокрема докторів наук та професорів – 39.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/4.png" alt="№" />
+                        <p id="text-title-slider-item">ВИСОКА АКАДЕМІЧНА СТИПЕНДІЯ</p>
+                        <p class="text-slider-item">Розмір звичайної академічної стипендії – 2000 грн. Відмінники
+                            отримують стипендію у
+                            розмірі 2910 грн.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/5.png" alt="№" />
+                        <p id="text-title-slider-item">ЗАБЕЗПЕЧЕНІСТЬ ГУРТОЖИТКОМ</p>
+                        <p class="text-slider-item">За потреби студенти університету стовідсотково забезпечуються житлом
+                            у гуртожитку, де
+                            створені всі необхідні умови для проживання, навчання та відпочинку.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/6.png" alt="№" />
+                        <p id="text-title-slider-item">ПОВНИЙ ЦИКЛ НАВЧАННЯ ВІД БАКАЛАВРА ДО ДОКТОРА</p>
+                        <p class="text-slider-item">Усі рівні вищої освіти: випускники-бакалаври мають змогу вступити до
+                            магістратури,
+                            найкращі можуть продовжити навчання в аспірантурі для здобуття ступеня доктора філософії.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/7.png" alt="№" />
+                        <p id="text-title-slider-item">ЦІКАВЕ СТУДЕНТСЬКЕ ЖИТТЯ: ОСВІТА, НАУКА, ДОЗВІЛЛЯ</p>
+                        <p class="text-slider-item">Олімпіади, наукові конкурси, конференції, експерименти, спортивні
+                            змагання. Студентський
+                            клуб, студентське самоврядування, клуб молодіжного лідерства, творчі конкурси, туристичні
+                            подорожі.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/8.png" alt="№" />
+                        <p id="text-title-slider-item">ТРАДИЦІЇ ТА ІННОВАЦІЇ</p>
+                        <p class="text-slider-item">Спеціалізовані лабораторії, майстерні, хімічні, біологічні, фізичні
+                            кабінети,
+                            танцювальні та спортивні зали. Дистанційне та комбіноване навчання, сучасні методики
+                            викладання.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/9.png" alt="№" />
+                        <p id="text-title-slider-item">ПРАКТИЧНА ПІДГОТОВКА</p>
+                        <p class="text-slider-item">Пленери для студентів мистецьких спеціальностей, польові й
+                            туристичні практики для
+                            студентів природничого спрямування, психолого-педагогічні, обчислювальні, технологічні
+                            практики.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/10.png" alt="№" />
+                        <p id="text-title-slider-item">МІЖНАРОДНИЙ ДОСВІД</p>
+                        <p class="text-slider-item">Університет постійно розширює участь студентів у міжнародних
+                            освітніх і культурних
+                            програмах, закордонних мистецьких заходах, громадських ініціативах.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/11.png" alt="№" />
+                        <p id="text-title-slider-item">УНІВЕРСАЛЬНІСТЬ ОТРИМАНОЇ ОСВІТИ</p>
+                        <p class="text-slider-item">Педагогічна освіта – це фундаментальні знання в обраній науковій
+                            галузі, розвинені
+                            лідерські та комунікативні навички, уміння навчати і вчитися протягом життя.</p>
+                    </div>
+                    <div class="slide">
+                        <img class="photo-slider-item" src="photo-advantages/12.png" alt="№" />
+                        <p id="text-title-slider-item">ШИРОКІ МОЖЛИВОСТІ ПРАЦЕВЛАШТУВАННЯ</p>
+                        <p class="text-slider-item">Випускники педагогічного залучені до всіх сфер діяльності:
+                            освітньої, адміністративної,
+                            мистецької, краєзнавчої, екологічної, соціальної, психологічної, технологічної, видавничої,
+                            спортивної.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Переваги -->
+
+        <!-- Коментарії -->
+        <div id="about" class="container">
+            <h1 class="container-title">Про нас говорять</h1>
+            <div class="tabs">
+                <button class="tab tab-prev"><span class="arrow-button">‹</span></button>
+                <button class="tab tab-next"><span class="arrow-button">›</span></button>
+            </div>
+            <div class="reviews">
+                <div class="review" id="1">
+                    <div style="display: flex;">
+                        <div class="photo-comments" id="photo-comments-1"></div>
+                        <div>
+                            <div class="avtor-name">Дарія Чеснокова</div>
+                            <span class="avtor-specialties">Спеціальність: с.о. Фізика</span>
+                        </div>
+                    </div>
+                    <p class="text-comments">
+                        Я випускниця Криворізького державного педагогічного університету 2019 року.
+                        Всі 5,5 років навчання промайнули дуже швидко, згадувати університет завжди приємно, особливо
+                        свою
+                        неймовірну групу ФІ-14.
+                        Фізико-математичний факультет по праву можна вважати найкращим серед усіх інших, і це не тому,
+                        що він стояв
+                        у витоках педагогічного, а тому що найкваліфікованіших викладачів, розумних та активних
+                        студентів можна
+                        зустріти лиш на фізматі.
+                    </p>
+                    <p class="text-comments">
+                        Кожна спеціальність була по-своєму цікава, але, як на мене, на фізиці завжди панувала родинна
+                        атмосфера, усі
+                        викладачі майстри своєї справи і просто чудові люди. Зараз я працюю в гімназії і усі набуті
+                        знання в
+                        університеті, я використовую на уроках фізики та інформатики.
+                    </p>
+                </div>
+                <div class="review" id="2">
+                    <div style="display: flex;">
+                        <div class="photo-comments" id="photo-comments-2"></div>
+                        <div>
+                            <div class="avtor-name">Тетяна Яковенко</div>
+                            <span class="avtor-specialties">Спеціальність: Математика</span>
+                        </div>
+                    </div>
+                    <p class="text-comments">
+                        В 2015 році закінчила ДВНЗ "Криворізький національний університет", отримала ступінь вищої освіти: магістр, за спеціальністю "математика". Завжди приємно пригадувати моє навчання на фізико-математичному факультеті. Роки мого навчання дозволили мені не тільки придбати знання з фізико-математичних наук, а також навчили мене, як учити
+                        дітей. Я маю на увазі методичну підготовку майбутніх учителів, якій завжди приділялась велика увага.
+                    </p>
+                    <p class="text-comments">
+                        Ні разу не пошкодувала про обраний фах. Вважаю, що кожен, хто хоч раз "засмакував" усю красу математики, полюбить її назавжди.
+                        Хочу висловити велику подяку нашим учителям, викладачам і наставникам за отримані знання.
+                        І запрошую всіх доторкнутися до краси математичної науки, оскільки МАТЕМАТИКА - цариця всіх наук. І це звання вона носить заслужено.
+                    </p>
+                </div>
+                <div class="review" id="3">
+                    <div style="display: flex;">
+                        <div class="photo-comments" id="photo-comments-3"></div>
+                        <div>
+                            <div class="avtor-name">Дарія Чеснокова</div>
+                            <span class="avtor-specialties">Спеціальність: с.о. Фізика</span>
+                        </div>
+                    </div>
+                    <p class="text-comments">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequatur placeat tempore quod ullam, molestias expedita
+                        assumenda aut provident ea error asperiores voluptatum ipsa
+                        impedit fuga mollitia incidunt quos nam adipisci.
+                    </p>
+                    <p class="text-comments">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                        corrupti optio deserunt aperiam, id laboriosam veniam facilis enim
+                        amet at eos in, vel debitis, magni nam dolor non quae esse cum
+                        sint corporis. Id rem, placeat voluptas nesciunt a non sed ab
+                        inventore in! Ea porro officia quas excepturi natus?
+                    </p>
+                </div>
+            </div>
+            <script src="script(comments).js"></script>
+        </div>
+        <!-- Коментарії -->
+
+        <!-- Контакти -->
+        <div id="contacts" class="contact-container">
+            <div class="contacts-wrapper" style="display: flex;">
+                <div style="width: 50%; ">
+                    <h1 class="contact-title">Контакти</h1>
+                    <div class="contact-email">
+                        <span class="contact-ico-email">&#9993;</span>
+                        <div>
+                            <div class="email-title">Навчання</div>
+                            <a href="mailto:physmath@kdpu.edu.ua" class="email-contact">physmath@kdpu.edu.ua</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-tell">
+                        <span class="contact-ico-tell">&#128379;</span>
+                        <div class="contact-tell-item">
+                            <div class="tell-title">Телефон</div>
+                            <a href="tel:380672955677" class="tell-contact">067 29 55 677 <span
+                                    id="tell-kafedra-decanat">(деканат)</span>
+                            </a>
+                            <a href="tel:380675922344" class="tell-contact">067 59 22 344 <span
+                                    id="tell-kafedra-decanat">(кафедра інформатики та прикладної математики)</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h1 style="margin-bottom: 30px;" class="contact-title">МИ В СОЦІАЛЬНИХ МЕРЕЖАХ</h1>
+                    <div class="social-media">
+                        <ul class="social-media-list">
+                            <li class="social-media-items"><a target="_blank"
+                                    href="https://www.instagram.com/hellish_fizmat/"><img class="media-element"
+                                        src="social-media/Instagram.png" alt="Instagram"></a></li>
+
+                            <li class="social-media-items"><a target="_blank"
+                                    href="https://www.facebook.com/share/7KBEyYHJkaMPDKXq/?mibextid=K35XfP"><img
+                                        class="media-element" src="social-media/Facebook.png" alt="Facebook"></a></li>
+
+                            <li class="social-media-items"><a target="_blank"
+                                    href="https://www.tiktok.com/@kdpuofficial?_t=8lNzXloU9Fl"><img
+                                        class="media-element" src="social-media/Tik-tok.png" alt="Tik-tok"></li>
+
+                            <li class="social-media-items"><a target="_blank"
+                                    href="https://www.youtube.com/@Kdpu_Edu_Ua/videos"><img class="media-element"
+                                        src="social-media/Youtube.png" alt="Youtube"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div style="width: 30%; display: flex;">
+                    <div class="contact-main-form">
+                        <h1 class="title-form">ЗАЛИШТЕ СВОЇ КОНТАКТИ І МИ ДОПОМОЖЕМО ВИРІШИТИ БУДЬ-ЯКЕ ПИТАННЯ</h1>
+                        <form action="#" class="form-contact" method="post">
+                            <div class="input-group">
+                                <label class="text-input-group" for="name">Введіть своє ім'я:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="input-group">
+                                <label class="text-input-group" for="phone">Введіть номер телефону:</label>
+                                <input type="text" id="phones" maxlength="13" name="phone" placeholder="(XXX)-XXX-XXXX"
+                                    pattern="\d*" />
+                            </div>
+                            <div class="input-group">
+                                <label class="text-input-group" for="email">Введіть свій email:</label>
+                                <input type="email" id="email" placeholder="fithmat@gmail.com" maxlength="50"
+                                    name="email" required>
+                            </div>
+                            <div style="display: flex; justify-content: center;">
+                                <button class="contact-button" type="submit">Відправити</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Контакти -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Фізико-математичний факультет. Всі права захищені.</p>
+        <p class="footer-by">by Gura Stanislav I-21</p>
+    </footer>
+    <script src="script(specialties).js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phys. Math</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-div">
+            <img class="header-logo" src="photo/ava.png" alt="Phys. Math" />
+            <div class="header-logo-text">
+                Криворізький державний педагогічний університет
+            </div>
+        </div>
+        <div class="header-container">
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li class="header-menu-item"><a href="#abiturient">Вступнику</a></li>
+                    <li class="header-menu-item"><a href="#advantages">Переваги</a></li>
+                    <li class="header-menu-item"><a href="#about">Про нас</a></li>
+                    <li class="header-menu-item"><a href="#contacts">Контакти</a></li>
+                    <li class="header-menu-item"><a onclick="openModal()" href="#test">Тест</a></li>
+                </ul>
+            </nav>
+            <a class="phone" href="tel:+380972564229">(067) 592 23 44</a>
+        </div>
+    </header>
+
+    <div id="modalwindow">
+        <div class="modal-body">
+            <div id="quiz-modal" class="modal">
+                <div class="modal-content">
+                    <button id="exit-button" onclick="closeModal()">&#10008;</button>
+                    <h2 id="quiz-title">Освітня програма очима випускника</h2>
+                    <div id="test-text-intro">Анкета для опитування випускників щодо якості освітньої програми.
+                        Анкетування проводиться анонімно. Ваші відповіді
+                        допоможуть удосконалити якість освітнього процесу в Криворізькому державному педагогічному
+                        університеті.</div>
+                    <button id="quiz-button">Почати!</button>
+                    <form id="quiz-form">
+                        <div id="quiz-questions"></div>
+                        <button id="submit-button">Відправити</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script(test).js"></script>
