@@ -14,14 +14,14 @@ const mailjet = new Mailjet({
 
 const server = express()
 
-server.use(express.static(__dirname + '/src'));
+server.use(express.static(__dirname));
 server.use(bodyParser.urlencoded({extended: false}));
 
 const port = process.env.PORT | 3000;
 
 server.get("/", (req, res) => {
     console.log("GET ZPAROS")
-    res.sendFile(path.join(__dirname, "src/index.html"))
+    res.sendFile(path.join(__dirname, "index.html"))
 })
 
 server.post("/", (req, res) => {
@@ -56,7 +56,7 @@ server.post("/", (req, res) => {
             if (err) console.log(err.statusCode)
         })
 
-    res.sendFile(path.join(__dirname, "src/index.html"))
+    res.sendFile(path.join(__dirname, "index.html"))
 })
 
 server.listen(port, () => {
