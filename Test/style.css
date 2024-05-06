@@ -1,0 +1,1057 @@
+/*Обнулення*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/*--------------------*/
+
+/*--------------------header--------------------*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    border-bottom: 2px solid rgb(212, 212, 212);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-div {
+    width: 170px;
+    margin-left: 8vw;
+}
+
+.header-logo {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.header-logo-text {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+}
+
+.header-menu-item {
+    margin-right: 3vw;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.header-menu-item a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.header-menu-item:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: #8829A9;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.header-menu-item:hover:after {
+    opacity: 1;
+}
+
+.phone {
+    color: #cc993a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*------test------*/
+#modalwindow {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#quiz-title {
+    font-size: 46px;
+    padding: 30px 30px 0px 30px;
+    justify-content: center;
+    display: flex;
+    font-family: "arial", monospace;
+}
+
+#test-text-intro {
+    font-family: "arial", monospace;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    line-height: 1.8;
+    color: #000000c9;
+}
+
+#quiz-button {
+    width: 16%;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    min-width: 120px;
+    color: #8829A9;
+    margin-left: 2%;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+#submit-button {
+    width: 16%;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    min-width: 120px;
+    color: #8829A9;
+    margin: 2% 0% 0% 2%;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+#exit-button {
+    font-size: 50px;
+    background-color: rgba(28, 28, 28, 0);
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal-body {
+    width: 70%;
+    height: 55%;
+    background-color: #ca9f4e;
+    border-radius: 15px;
+}
+
+/*------Styletest------*/
+#title-question {
+    padding: 2%;
+    font-size: 20px;
+    font-family: "arial", monospace;
+}
+
+#answer-test {
+    font-size: 16px;
+    margin-left: 2%;
+    font-family: "arial", monospace;
+}
+
+/*------Styletest------*/
+
+/*------test------*/
+
+/*--------------------header--------------------*/
+
+/*--------------------main--------------------*/
+
+/*------specialties------*/
+
+.specialties-div {
+    display: flex;
+}
+
+
+.photo-purple-tabls {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(photo-site/purple-tabls.png);
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    filter: blur(10px);
+    opacity: 0.5;
+}
+
+.text-intro-div {
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-intro {
+    word-spacing: 1px;
+    align-self: center;
+    word-wrap: break-word;
+    width: 70%;
+    font-family: "IBM Plex Mono", monospace;
+    color: #000000;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 56px;
+    margin-bottom: 60px;
+}
+
+#photo-intro {
+    background: url(photo/photo-intro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-specialties {
+    width: 70%;
+    margin: 0 0 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.specialties-name {
+    width: 80%;
+    overflow: hidden;
+    background-color: #8829A9;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.nmt-text-div {
+    bottom: 5%;
+    position: absolute;
+}
+
+.nmt-title {
+    color: #3d0d96;
+    width: 75%;
+    box-shadow: 0px 2px 0px;
+    opacity: 0;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.nmt-list {
+    width: 75%;
+}
+
+.nmt-list-items {
+    color: white;
+    opacity: 0;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #cc993a;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#nmt-mot-list-items {
+    color: white;
+    opacity: 0;
+    font-size: 16px;
+    background-color: #3d0d96;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#arrow-specialties {
+    font-size: 18px;
+}
+
+#specialties-1 {
+    background: url(photo/hp-intro-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#specialties-2 {
+    background: url(photo/hp-intro-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#specialties-3 {
+    background: url(photo/hp-intro-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.specialties {
+    width: 27%;
+    height: 80vh;
+    padding: 23px;
+    border-radius: 5px;
+    margin: 30px 10px 10px 0px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.specialties:hover {
+    transition: all 0.6s ease;
+    opacity: 1;
+    width: 40%;
+
+    .nmt-title {
+        opacity: 1;
+    }
+
+    .nmt-list-items {
+        opacity: 1;
+    }
+
+    #nmt-mot-list-items {
+        opacity: 1;
+    }
+
+}
+
+/*------specialties------*/
+
+/*------info-specialties------*/
+
+.container-info-specialties {
+    margin-top: 100px;
+}
+
+.info-specialties-title {
+    text-transform: uppercase;
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+
+.slider-wrapper {
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+    opacity: 1;
+}
+
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.slides-container {
+    height: calc(80vh - 2rem);
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}
+
+
+/*---text-info---*/
+
+#works-slider-1 {
+    background: url(photo-info-specialties/1.png);
+    background-repeat: no-repeat;
+}
+
+#works-slider-2 {
+    background: url(photo-info-specialties/2.png);
+    background-repeat: no-repeat;
+}
+
+#works-slider-3 {
+    background: url(photo-info-specialties/3.png);
+    background-repeat: no-repeat;
+}
+
+.title-info-specialties {
+    color: rgba(206, 206, 206, 0.925);
+    padding: 60px 0px 100px 40px;
+    font-size: 46px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+
+.intro-specialties-text {
+    font-family: "IBM Plex Mono", monospace;
+    color: rgba(206, 206, 206, 0.925);
+    padding: 0% 0% 0% 5%;
+    font-size: 30px;
+}
+
+.info-specialties-list {
+    font-family: "IBM Plex Mono", monospace;
+    color: rgba(206, 206, 206, 0.925);
+    width: 60%;
+    font-size: 20px;
+    padding: 3% 0% 0% 5%;
+    ;
+}
+
+.info-specialties-item {
+    margin-bottom: 20px;
+}
+
+/*---text-info---*/
+
+/*------info-specialties------*/
+
+/*------advantages------*/
+.advantages-container {
+    text-align: center;
+}
+
+.advantages-title {
+    text-transform: uppercase;
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#text-title-slider-item {
+    margin-bottom: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 12));
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.photo-slider-item {
+    margin-bottom: 20px;
+}
+
+.text-slider-item {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 70s linear infinite;
+    display: flex;
+    width: calc(250px * 24);
+}
+
+.slide {
+    width: 250px;
+    margin-right: 40px;
+}
+
+/*------advantages------*/
+
+
+
+/*------comments------*/
+
+.container {
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-title {
+    text-transform: uppercase;
+    color: #1f1f1f;
+    font-weight: 600;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tab-prev,
+.tab-next {
+    width: 50px;
+    height: 40px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 40%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.arrow-button {
+    font-size: 27px;
+}
+
+.tab-prev:hover,
+.tab-next:hover {
+    background-color: #cc993a;
+    width: 55px;
+    height: 43px;
+    color: #fff;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review {
+    width: 28%;
+    height: 100%;
+    min-height: 500px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0px 10px 10px 0px;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.photo-comments {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+#photo-comments-1 {
+    background: url(ava-commends/photo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo-comments-2 {
+    background: url(ava-commends/photo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo-comments-3 {
+    background: url(ava-commends/photo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.avtor-name {
+    color: #474747;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+.avtor-specialties {
+    color: #888888;
+    margin-bottom: 20px;
+
+}
+
+.text-comments {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.review.active {
+    box-shadow: 2px 2px 5px #8829A9;
+    opacity: 1;
+    width: 33%;
+
+    .photo-comments {
+        width: 150px;
+        height: 150px;
+        border-radius: 5%;
+    }
+}
+
+/*------comments------*/
+
+/*------contacts------*/
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-title {
+    text-transform: uppercase;
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.contact-email {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contact-ico-email {
+    margin-right: 20px;
+    font-size: 32px;
+    color: #cc993a;
+}
+
+
+.email-title {
+    font-size: 24px;
+    color: #8829A9;
+    margin-bottom: 20px;
+}
+
+.email-contact {
+    font-size: 20px;
+    font-weight: 600;
+    color: #474747;
+
+}
+
+.contact-tell {
+    display: flex;
+}
+
+.contact-ico-tell {
+    width: 30px;
+    margin-right: 20px;
+    font-size: 32px;
+    display: flex;
+    color: #cc993a;
+}
+
+.contact-tell-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.tell-title {
+    font-size: 24px;
+    color: #8829A9;
+    margin-bottom: 20px;
+}
+
+.tell-contact {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #474747;
+}
+
+#tell-kafedra-decanat {
+    font-size: 16px;
+}
+
+.social-media-items {
+    display: inline;
+    margin-right: 15px;
+}
+
+.media-element {
+    width: 40px;
+}
+
+.media-element:hover {
+    border: 3px solid #8829A9;
+    border-radius: 10px;
+}
+
+/*------contacts------*/
+
+/*---form---*/
+.contact-main-form {
+    border: 2px solid #5f5f5f;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 20px 25px 2px #a55abe, 20px 25px 0px 1px #474747;
+
+}
+
+.form-contact {
+    margin: 0px 50px 0px 50px;
+}
+
+.title-form {
+    font-size: 22px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text-input-group {
+    font-size: 15px;
+    color: #363636;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+
+    &:focus {
+        border-color: #8829A9;
+    }
+}
+
+.contact-button {
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #cc993a;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.contact-button:hover {
+    background-color: #d6ae63;
+}
+
+/*---form---*/
+
+/*--------------------main--------------------*/
+
+
+
+/*--------------------footer--------------------*/
+footer {
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.footer-by {
+    margin-top: 5px;
+}
+
+/*--------------------footer--------------------*/
+
+@media (max-width:1056px) {
+    .review {
+        width: 100%;
+    }
+
+    .review.active {
+        width: 100%;
+    }
+
+    .info-specialties-list {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1680px) {
+    .container-specialties {
+        width: 70%;
+    }
+
+    .specialties {
+        width: 23%;
+        height: 650px;
+    }
+
+    .nmt-text-div {
+        width: 25%;
+        bottom: 10%;
+    }
+
+    .nmt-title {
+        width: 40%;
+        font-size: 22px;
+    }
+
+    .nmt-list {
+        width: 40%;
+    }
+
+    .nmt-list-items {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 7px;
+        overflow: hidden;
+    }
+
+    #nmt-mot-list-items {
+        font-size: 16px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        padding: 7px;
+    }
+
+    .title-info-specialties {
+        font-size: 40px;
+    }
+
+    .intro-specialties-text {
+        font-size: 24px;
+    }
+
+    .info-specialties-list {
+        font-size: 18px;
+    }
+
+
+    /*--test--*/
+    #quiz-title {
+        font-size: 38px;
+        padding: 20px 20px 0px 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    #test-text-intro {
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        padding: 10px 10px;
+        line-height: 1.8;
+    }
+
+    #quiz-button {
+        width: 16%;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 5px;
+        overflow: hidden;
+        min-width: 120px;
+        color: #8829A9;
+        margin-left: 2%;
+    }
+
+    #submit-button {
+        width: 16%;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 5px;
+        overflow: hidden;
+        min-width: 120px;
+        color: #8829A9;
+        margin: 2% 0% 0% 2%;
+    }
+
+    #exit-button {
+        font-size: 40px;
+        background-color: rgba(28, 28, 28, 0);
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .modal-body {
+        width: 60%;
+        height: 50%;
+        background-color: #ca9f4e;
+        border-radius: 15px;
+    }
+
+    /*------Styletest------*/
+    #title-question {
+        padding: 1%;
+        font-size: 16px;
+    }
+
+    #answer-test {
+        font-size: 14px;
+        margin-left: 1%;
+    }
+
+    /*--test--*/
+}
